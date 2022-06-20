@@ -11,6 +11,7 @@
 		B437A754285FC090005717B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437A753285FC090005717B3 /* ContentView.swift */; };
 		B437A756285FC091005717B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B437A755285FC091005717B3 /* Assets.xcassets */; };
 		B437A759285FC091005717B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B437A758285FC091005717B3 /* Preview Assets.xcassets */; };
+		B437A761285FC2AF005717B3 /* SmartCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437A760285FC2AF005717B3 /* SmartCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		B437A753285FC090005717B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B437A755285FC091005717B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B437A758285FC091005717B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B437A75F285FC236005717B3 /* TKSmartCardTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TKSmartCardTest.entitlements; sourceTree = "<group>"; };
+		B437A760285FC2AF005717B3 /* SmartCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		B437A750285FC090005717B3 /* TKSmartCardTest */ = {
 			isa = PBXGroup;
 			children = (
+				B437A75F285FC236005717B3 /* TKSmartCardTest.entitlements */,
 				B437A751285FC090005717B3 /* TKSmartCardTestApp.swift */,
 				B437A753285FC090005717B3 /* ContentView.swift */,
+				B437A760285FC2AF005717B3 /* SmartCardModel.swift */,
 				B437A755285FC091005717B3 /* Assets.xcassets */,
 				B437A757285FC091005717B3 /* Preview Content */,
 			);
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B437A754285FC090005717B3 /* ContentView.swift in Sources */,
+				B437A761285FC2AF005717B3 /* SmartCardModel.swift in Sources */,
 				B437A752285FC090005717B3 /* TKSmartCardTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TKSmartCardTest/TKSmartCardTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TKSmartCardTest/Preview Content\"";
@@ -279,9 +286,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yubico.TKSmartCardTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TKSmartCardTest/TKSmartCardTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TKSmartCardTest/Preview Content\"";
@@ -308,9 +320,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yubico.TKSmartCardTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

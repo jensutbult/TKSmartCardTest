@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var model = SmartCardModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack {
+            Spacer()
+            VStack {
+                Spacer()
+                Text(model.status ?? "")
+                Spacer()
+                Button("Scan smart card") {
+                    model.connect()
+                }
+                Spacer()
+            }
+            Spacer()
         }
     }
 }
